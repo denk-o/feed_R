@@ -16,4 +16,6 @@ $.getJSON(
 .error(function(){alert("error");})
 .complete(function(){alert("complete");});
 //trying raw.js on client side  here
-var rawjs = require("raw.js");
+//trying snoocore here too
+var snoocore = require('snoocore');
+var reddit= new Snoocore();
