@@ -3,22 +3,12 @@
 	<head>
 		<title>Comment Feed with Reddit API</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
-		<script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="Scripts/require.js" type="text/javascript"></script>
+		<script src="Scripts/app/redditjson.js" type="text/javascript"></script>
 	</head>
 	<body>
 		gary ayounchee my boy
-		<div id="logo">
-	      <h1>Reddit API Domain Search</h1>
-	    </div>
-	    
-	    <p>Enter a domain without <code>http://www.</code> to browse recent submissions in Reddit.</p>
-	    
-	    <div id="searchfield">
-	      <form id="domainform" name="domainform">
-	        <input type="text" class="search" id="s" name="s" placeholder="ex: youtube.com">
-	      </form>
-	    </div>
-	    
-	    <div id="content"></div>
+		<div id="reddit-content"></div>
 	</body>
 </html>
