@@ -1,0 +1,1 @@
+var Snoocore = window.snoocore;
