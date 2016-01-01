@@ -4,16 +4,26 @@
 		<title>Comment Feed with Reddit API</title>
 		<link rel="stylesheet" type="text/css" href="normalize.css">
 		<script src="Scripts/jquery-1.11.3.min.js" type="text/javascript"></script>
-		<script src="Scripts/require.js" type="text/javascript"></script>
-		<script src="Scripts/snoocore_web/dist/Snoocore-browser.min.js" type="text/javascript"></script>
-		<script src="Scripts/app/redditjson.js" type="text/javascript"></script>
+		<script src="Scripts/snoocore_web/dist/Snoocore-browser.min.js"></script>
 	</head>
 	<body>
-		gary ayounchee my boy
-		<div id="reddit-content">
-			<!--Begin snoocore testing here-->
-			
-			</script>
+		<div id="authenticate_div">
+			<h1>AUTHENTICATION</h1>
+			<br/><a href="#" id="auth_url">Click here to authenticate</a><br/>
 		</div>
+		<div id="reddit-content">
+			<!--content div here-->
+			<h2>input a user and return comment history</h2>
+		    <input id="username" type="text" value="" />
+		    <input type="submit"
+		           onclick="window.comments()"
+		           value="Get comments" /><br>
+		</div>
+		<div>
+		<pre id="out"></pre><br/>
+	</div>
 	</body>
+	<footer>
+		<script src="Scripts/app/feed_R_v1.js" type="text/javascript"></script>
+	</footer>
 </html>
