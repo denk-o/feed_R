@@ -21,3 +21,19 @@ if(accessToken){
 		document.getElementById('out').innerText = JSON.stringfy(result, null, 2);
 	});
 }
+
+//lets try to get the comments from a user
+window.comments = function(){
+	//take in a user input
+	var username = document.getElementById('username').value;
+	document.getElementById('out').innerText = "test";
+	return reddit('/user/$username/comments').listing({
+		$username: username,
+		limit: 10
+	}).then(function(slice){
+		console.log(slice);
+		for(var i=0;i<10;i++){
+			$('#out').append('<br>'+ slice.children[i].data.body);
+		}
+	})
+}
