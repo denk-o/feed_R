@@ -26,13 +26,13 @@ if(accessToken){
 window.comments = function(){
 	//take in a user input
 	var username = document.getElementById('username').value;
-	document.getElementById('out').innerText = "test";
+	var size = 10;
 	return reddit('/user/$username/comments').listing({
 		$username: username,
-		limit: 10
+		limit: size
 	}).then(function(slice){
 		console.log(slice);
-		for(var i=0;i<10;i++){
+		for(var i=0;i<size;i++){
 			$('#out').append('<br>'+ slice.children[i].data.body);
 		}
 	})
